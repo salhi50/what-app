@@ -1,0 +1,159 @@
+/* global property */
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*::before, *::after{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+select {
+    display: block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff;
+}
+select:focus {
+    outline: none;
+}  
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+}
+@media (min-width: 1500px) {
+    .container {
+      width: 1460px;
+    }
+}
+
+button{
+    border: 1px solid transparent;
+    cursor: pointer;
+    outline: none;
+}
+button:focus {
+    outline: none;
+}
+input,textarea {
+    outline: none;
+    text-indent: 15px;
+    font-size: 17px;
+    line-height: initial !important;
+  }
+input:focus,textarea:focus {
+    outline: none;
+  }
+ul {
+    list-style: none !important;
+}
+a{
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+/* text property */
+
+.h1-xlarge{
+    font-size: 2.5rem;
+}
+.h2-large{  /* for big title */
+    font-size: 2rem;
+}
+.h3-mid{    /* midium title */
+    font-size: 1.5rem;
+}
+.h4-small{  /* smalltitle */
+    font-size: 1.2rem;
+}
+.h5-xsmall{  /* underused */
+    font-size: 1.1rem;
+}
+h6{          /* underused */
+    font-size: 1rem;
+}
+.p-large{    /* bigest text */
+    font-size: 1rem;
+}
+.p-mid{  /* mid text */
+    font-size: 15px;
+}
+.p-small{    /* small text */
+    font-size: 14px;
+}
+.p-xsmall{  /* smallest text */
+    font-size: 13px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+}
+
+/* flex property */
+
+.flex-between {
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.flex-evenly {
+    justify-content: space-evenly;
+    align-items: center;
+}
+.flex{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+}
+.justify-center{
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+} 
+.align-center{
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.fl-1{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+.fd-col{
+    flex-direction: column;
+}
+
+.plr-10{
+    padding: 0 10px;
+}
